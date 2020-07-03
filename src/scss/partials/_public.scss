@@ -1,0 +1,126 @@
+.public {
+  .wrapper {
+    margin: 4em 0;
+    height: 100%;
+    .mb_nav_ {
+      width: 851px;
+      margin: 0 auto 0.4em;
+      border-radius: 5px;
+      background: #f8f9faa1;
+      padding: 1em 1em;
+      a {
+        text-decoration: none;
+        color: $cyan;
+        font-size: 14px;
+      }
+      span {
+        margin-left: 1em;
+        color: rgba($dark, 0.5);
+      }
+    }
+    .property-search {
+      background: #fff;
+      box-shadow: -1px 0 20px rgba(47, 19, 67, 0.06);
+      border-radius: 5px;
+      width: 851px;
+      min-height: 579px;
+      padding: 0 0 4em;
+      margin: 0 auto;
+      .centralize {
+        width: 700px;
+        margin: 0 auto;
+        padding: 0 0 4em;
+        .title {
+          text-align: center;
+          padding: 4em 0 2em;
+          h2 {
+            font-size: 20px;
+            font-weight: 600;
+          }
+          p {
+            font-size: 14px;
+            color: rgba($dark, 0.5);
+            margin: 0;
+          }
+          span {
+            width: 98px;
+            height: 2px;
+            background: rgba($dark, 0.1);
+            display: flex;
+            margin: 12px auto 0;
+          }
+        }
+        .form-wrap {
+          .collapse {
+            box-shadow: rgba(47, 19, 67, 0.06) -1px 0px 20px;
+            border-radius: 5px;
+            padding: 2em;
+          }
+          .d-flex {
+            .mb-3 {
+              &:first-child {
+                margin-right: 1em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .wrapper {
+      margin: 4em 0.5em;
+      .mb_nav_ {
+        width: auto;
+      }
+      .property-search {
+        width: auto;
+        .centralize {
+          width: auto;
+          .form-wrap {
+            padding: 1em;
+            .collapse {
+              padding: 2em 1em;
+            }
+            .d-flex {
+              flex-direction: column;
+              .mb-3 {
+                &:first-child {
+                  margin-right: 0em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .wrapper {
+      margin: 4em 0.5em;
+      .mb_nav_ {
+        width: 600px;
+      }
+      .property-search {
+        width: 600px;
+        .centralize {
+          width: 500px;
+          .form-wrap {
+            padding: 1em;
+            .collapse {
+              padding: 2em 1em;
+            }
+            .d-flex {
+              flex-direction: column;
+              .mb-3 {
+                &:first-child {
+                  margin-right: 0em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -545,6 +545,121 @@ header .menu-trigger {
   }
 }
 
+.public .wrapper {
+  margin: 4em 0;
+  height: 100%;
+}
+.public .wrapper .mb_nav_ {
+  width: 851px;
+  margin: 0 auto 0.4em;
+  border-radius: 5px;
+  background: #f8f9faa1;
+  padding: 1em 1em;
+}
+.public .wrapper .mb_nav_ a {
+  text-decoration: none;
+  color: #00b8c2;
+  font-size: 14px;
+}
+.public .wrapper .mb_nav_ span {
+  margin-left: 1em;
+  color: rgba(6, 58, 79, 0.5);
+}
+.public .wrapper .property-search {
+  background: #fff;
+  box-shadow: -1px 0 20px rgba(47, 19, 67, 0.06);
+  border-radius: 5px;
+  width: 851px;
+  min-height: 579px;
+  padding: 0 0 4em;
+  margin: 0 auto;
+}
+.public .wrapper .property-search .centralize {
+  width: 700px;
+  margin: 0 auto;
+  padding: 0 0 4em;
+}
+.public .wrapper .property-search .centralize .title {
+  text-align: center;
+  padding: 4em 0 2em;
+}
+.public .wrapper .property-search .centralize .title h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.public .wrapper .property-search .centralize .title p {
+  font-size: 14px;
+  color: rgba(6, 58, 79, 0.5);
+  margin: 0;
+}
+.public .wrapper .property-search .centralize .title span {
+  width: 98px;
+  height: 2px;
+  background: rgba(6, 58, 79, 0.1);
+  display: flex;
+  margin: 12px auto 0;
+}
+.public .wrapper .property-search .centralize .form-wrap .collapse {
+  box-shadow: rgba(47, 19, 67, 0.06) -1px 0px 20px;
+  border-radius: 5px;
+  padding: 2em;
+}
+.public .wrapper .property-search .centralize .form-wrap .d-flex .mb-3:first-child {
+  margin-right: 1em;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .public .wrapper {
+    margin: 4em 0.5em;
+  }
+  .public .wrapper .mb_nav_ {
+    width: auto;
+  }
+  .public .wrapper .property-search {
+    width: auto;
+  }
+  .public .wrapper .property-search .centralize {
+    width: auto;
+  }
+  .public .wrapper .property-search .centralize .form-wrap {
+    padding: 1em;
+  }
+  .public .wrapper .property-search .centralize .form-wrap .collapse {
+    padding: 2em 1em;
+  }
+  .public .wrapper .property-search .centralize .form-wrap .d-flex {
+    flex-direction: column;
+  }
+  .public .wrapper .property-search .centralize .form-wrap .d-flex .mb-3:first-child {
+    margin-right: 0em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .public .wrapper {
+    margin: 4em 0.5em;
+  }
+  .public .wrapper .mb_nav_ {
+    width: 600px;
+  }
+  .public .wrapper .property-search {
+    width: 600px;
+  }
+  .public .wrapper .property-search .centralize {
+    width: 500px;
+  }
+  .public .wrapper .property-search .centralize .form-wrap {
+    padding: 1em;
+  }
+  .public .wrapper .property-search .centralize .form-wrap .collapse {
+    padding: 2em 1em;
+  }
+  .public .wrapper .property-search .centralize .form-wrap .d-flex {
+    flex-direction: column;
+  }
+  .public .wrapper .property-search .centralize .form-wrap .d-flex .mb-3:first-child {
+    margin-right: 0em;
+  }
+}
+
 .auth_wrap header {
   position: absolute;
   left: 0;
@@ -908,23 +1023,33 @@ header .menu-trigger {
   font-size: 17px;
   margin-left: 4px;
 }
+.btn.item {
+  background: #00b8c2;
+  width: fit-content;
+  padding: 0.5em 3em;
+  border-radius: 5px;
+  margin-top: 1em;
+  display: block;
+  color: white;
+}
 
 .input {
   position: relative;
   margin-bottom: 1em;
+  display: flex;
 }
 .input input[type=text],
 .input input[type=email],
 .input input[type=password],
 .input input[type=date],
-.input select,
 .input input[type=number],
 .input input[type=url],
+.input select,
 .input input[type=tel] {
   display: block;
   padding: 1em 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%;
   height: 65px;
   font-size: 15px;
@@ -938,12 +1063,12 @@ header .menu-trigger {
 .input input[type=password]::-webkit-input-placeholder,
 .input input[type=date]::placeholder,
 .input input[type=date]::-webkit-input-placeholder,
-.input select::placeholder,
-.input select::-webkit-input-placeholder,
 .input input[type=number]::placeholder,
 .input input[type=number]::-webkit-input-placeholder,
 .input input[type=url]::placeholder,
 .input input[type=url]::-webkit-input-placeholder,
+.input select::placeholder,
+.input select::-webkit-input-placeholder,
 .input input[type=tel]::placeholder,
 .input input[type=tel]::-webkit-input-placeholder {
   color: rgba(6, 58, 79, 0.5);
@@ -955,12 +1080,12 @@ header .menu-trigger {
 .input input[type=password]:active,
 .input input[type=date]:focus,
 .input input[type=date]:active,
-.input select:focus,
-.input select:active,
 .input input[type=number]:focus,
 .input input[type=number]:active,
 .input input[type=url]:focus,
 .input input[type=url]:active,
+.input select:focus,
+.input select:active,
 .input input[type=tel]:focus,
 .input input[type=tel]:active {
   outline: none;
@@ -969,6 +1094,11 @@ header .menu-trigger {
 }
 .input label {
   display: none;
+}
+.input.list-item {
+  display: flex;
+  position: relative;
+  width: 340px;
 }
 .input.bordered label {
   position: absolute;
@@ -1059,8 +1189,9 @@ header .menu-trigger {
 }
 .input .select {
   color: #063a4f;
-  background: url("../img/svg/dropdown-arrow.svg") 95% center no-repeat rgba(51, 0, 101, 0.03) !important;
+  background: url("../img/dropdown-arrow.svg") 95% center no-repeat #fff !important;
   -webkit-appearance: none;
+  position: relative;
 }
 .input input[type=checkbox] {
   display: inline-block;
@@ -1099,6 +1230,45 @@ header .menu-trigger {
 .input.checker label {
   display: block;
   color: #063a4f;
+}
+.input.search_ input[type=text] {
+  border-radius: 5px;
+  padding-right: 8.5em;
+  height: 50px;
+  background: #fff;
+}
+.input.search_ .custom-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d0f1f3;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  outline: 0;
+  cursor: pointer;
+}
+.input.search_ .custom-btn ion-icon {
+  font-size: 24px;
+  color: #fff;
+}
+
+.input-group-text {
+  font-weight: bold;
+}
+.input-group-text ion-icon {
+  margin-left: 7px;
+}
+
+.custom-select {
+  height: 50px;
+}
+.custom-select:focus {
+  box-shadow: none;
 }
 
 @font-face {

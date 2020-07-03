@@ -69,4 +69,13 @@
       margin-left: 4px;
     }
   }
+  &.item {
+    background: #00b8c2;
+    width: fit-content;
+    padding: 0.5em 3em;
+    border-radius: 5px;
+    margin-top: 1em;
+    display: block;
+    color: white;
+  }
 }
