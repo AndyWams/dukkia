@@ -638,7 +638,6 @@ header .menu-trigger {
   font-size: 14px;
 }
 .public .wrapper .mb_nav_ span {
-  margin-left: 1em;
   color: rgba(6, 58, 79, 0.5);
 }
 .public .wrapper .property-search {
@@ -653,7 +652,7 @@ header .menu-trigger {
 .public .wrapper .property-search .centralize {
   width: 700px;
   margin: 0 auto;
-  padding: 0 0 4em;
+  padding: 2em 0 4em;
 }
 .public .wrapper .property-search .centralize .title {
   text-align: center;
@@ -684,6 +683,82 @@ header .menu-trigger {
 }
 .public .wrapper .property-search .centralize .form-wrap .d-flex .mb-3:first-child {
   margin-right: 1em;
+}
+.public .wrapper .property-search .centralize .form-wrap .alternate {
+  margin: 1em 0 2em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.public .wrapper .property-search .centralize .form-wrap .alternate span {
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  color: rgba(6, 58, 79, 0.5);
+  padding: 0 1em;
+  font-size: 14px;
+}
+.public .wrapper .property-search .centralize .form-wrap .alternate:after {
+  content: "";
+  position: absolute;
+  width: -webkit-fill-available;
+  height: 0.5px;
+  background: #e7e7e7;
+  left: 9px;
+  top: 11px;
+}
+.public .wrapper .property-search .centralize .list-item {
+  box-shadow: -1px 0 20px rgba(47, 19, 67, 0.06);
+  border-radius: 5px;
+  padding: 2em 1em;
+  -webkit-transition: 0.5s ease;
+          transition: 0.5s ease;
+  margin-bottom: 1em;
+}
+.public .wrapper .property-search .centralize .list-item .item h3 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+.public .wrapper .property-search .centralize .list-item .item img {
+  width: 24%;
+}
+.public .wrapper .property-search .centralize .list-item .item p {
+  font-size: 15px;
+  color: rgba(6, 58, 79, 0.5);
+  margin: 1em 0em;
+}
+.public .wrapper .property-search .centralize .list-item .item p strong {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  color: cadetblue;
+}
+.public .wrapper .property-search .centralize .list-item .item .naration {
+  border: 1px dashed rgba(16, 16, 16, 0.1);
+  padding: 2em;
+}
+.public .wrapper .property-search .centralize .list-item .item .naration label {
+  margin: 0 0em 1em;
+  display: block;
+}
+.public .wrapper .property-search .centralize .list-item .item .naration label a {
+  color: #00b8c2;
+  text-decoration: underline;
+}
+.public .wrapper .property-search .centralize .list-item .item .naration label:last-child {
+  margin: 0em;
+}
+.public .wrapper .property-search .centralize .list-item:hover {
+  box-shadow: -1px 0 20px 15px rgba(47, 19, 67, 0.06);
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .public .wrapper {
@@ -1200,9 +1275,9 @@ header .menu-trigger {
   border: none;
   border-radius: 5px;
   width: 100%;
-  height: 65px;
+  height: 50px;
   font-size: 15px;
-  background: rgba(0, 184, 194, 0.05);
+  background: #fff;
   border: 1px solid rgba(0, 184, 194, 0.15);
 }
 .input input[type=text]::-webkit-input-placeholder, .input input[type=text]::-webkit-input-placeholder,

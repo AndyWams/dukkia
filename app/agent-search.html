@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Property Search | Dukkia</title>
+    <title>Agent Search | Dukkia</title>
     <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="assets/components/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
@@ -280,12 +280,12 @@
     </div>
     <main class="public">
         <div class="wrapper">
-            <div class="mb_nav_"><a href="/">Home</a><span>/ Commercial Property-for-Sale</span></div>
+            <div class="mb_nav_"><a href="/">Home</a><span>/ Estate-Agents</span></div>
             <section class="property-search">
                 <div class="centralize">
                     <div class="title">
-                        <h2>Property for Sale</h2>
-                        <p>Search for Land/Office etc across Nigeria</p>
+                        <h2>Estate Agent</h2>
+                        <p>Search for local agents across Nigeria</p>
                         <span></span>
                     </div>
                     <form>
@@ -296,166 +296,25 @@
                                     <ion-icon name="search"></ion-icon>
                                 </button>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text">Min Price ₦</label>
-                                    </div>
-                                    <select class="custom-select">
-                                        <option selected>Show all</option>
-                                        <option>500,000</option>
-                                        <option>200,000</option>
-                                        <option>300,000</option>
-                                    </select>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text">Max Price ₦</label>
-                                    </div>
-                                    <select class="custom-select">
-                                        <option selected>Select max price</option>
-                                        <option>500,000</option>
-                                        <option>200,000</option>
-                                        <option>300,000</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text">Property Type <ion-icon name="home"></ion-icon>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select">
-                                        <option selected>Any</option>
-                                        <option value="1">Development</option>
-                                        <option value="2">Investment</option>
-                                        <option value="3">Land/Farms</option>
-                                    </select>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text">Tenure <ion-icon name="attach"></ion-icon>
-                                        </label>
-                                    </div>
-                                    <select class="custom-select">
-                                        <option selected>Any</option>
-                                        <option value="1">Licence</option>
-                                        <option value="2">Freehold</option>
-                                    </select>
-                                </div>
-                            </div>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
-                                    <label class="input-group-text">Sort by <ion-icon name="swap-vertical-outline">
-                                        </ion-icon></label>
+                                    <label class="input-group-text">Location</label>
                                 </div>
                                 <select class="custom-select">
                                     <option selected>Any</option>
-                                    <option value="1">Price Highest to Lowest</option>
-                                    <option value="2">Price Lowest to Highest</option>
-                                    <option value="3">Most Recent</option>
+                                    <option>Abia</option>
+                                    <option>Abuja</option>
+                                    <option>Adamawa</option>
                                 </select>
                             </div>
-                            <section>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <button type="button" class="btn btn-primary_  collapsed"
-                                        style="width:100%; margin-bottom: 1em;" data-target="#advancedOptions"
-                                        data-toggle="collapse" aria-expanded="true" tabindex="-1">Advanced search
-                                        option</button>
-                                </div>
-                                <div class="content collapse" id="advancedOptions">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text">Min Size</label>
-                                            </div>
-                                            <select class="custom-select">
-                                                <option selected>Show all</option>
-                                                <option>100</option>
-                                                <option>200</option>
-                                                <option>300</option>
-                                            </select>
-                                        </div>
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text">Max Size</label>
-                                            </div>
-                                            <select class="custom-select">
-                                                <option selected>Select max size</option>
-                                                <option>100</option>
-                                                <option>200</option>
-                                                <option>300</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text">Dimension</label>
-                                            </div>
-                                            <select class="custom-select">
-                                                <option selected>Any</option>
-                                                <option>Square feet</option>
-                                                <option>Square meter</option>
-                                            </select>
-                                        </div>
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text">No of Rooms</label>
-                                            </div>
-                                            <select class="custom-select">
-                                                <option selected>Show all</option>
-                                                <option>1 to 9</option>
-                                                <option>10 to 19</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text">No of Parking</label>
-                                            </div>
-                                            <select class="custom-select">
-                                                <option selected>Show all</option>
-                                                <option>1 to 9</option>
-                                                <option>10 to 19</option>
-                                            </select>
-                                        </div>
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text">Furniture Status</label>
-                                            </div>
-                                            <select class="custom-select">
-                                                <option selected>Any</option>
-                                                <option> Furnished</option>
-                                                <option>Part-Furnished</option>
-                                                <option>Unfurnished</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text">Added</label>
-                                            </div>
-                                            <select class="custom-select">
-                                                <option selected>Any</option>
-                                                <option>This Month</option>
-                                                <option>Last 3-Months</option>
-                                            </select>
-                                        </div>
-                                        <div class="input search_">
-                                            <input type="text" placeholder="borehole or generator"
-                                                style="width: 310px;">
-                                            <button type="button" class="custom-btn">
-                                                <ion-icon name="search"></ion-icon>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <a href="" class="btn item"> See 1 Property</a>
+                            <a href="agent-list.html" class="btn item"> See 3 Agents</a>
+                            <div class="alternate"><span>Search by Name</span></div>
+                            <div class="input">
+                                <input type="text" placeholder="Search name of agent/dealer/landlord/seller">
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="btn btn-secondary_">Search</button>
+                            </div>
                         </div>
                     </form>
                 </div>
