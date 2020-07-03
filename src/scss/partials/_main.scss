@@ -108,7 +108,7 @@
   }
   .d-flex {
     h4 {
-      margin: 3em 0em 2em;
+      margin: 1em 0em 2em;
       font-size: 14px;
       a {
         text-decoration: none;
@@ -288,6 +288,12 @@
         .item {
           width: 486px;
         }
+      }
+    }
+    .d-flex {
+      &.alt {
+        margin-bottom: 4em;
+        padding-bottom: 4em;
       }
     }
   }

@@ -394,7 +394,7 @@ header .menu-trigger {
   background: rgba(0, 0, 0, 0.08);
 }
 .main .d-flex h4 {
-  margin: 3em 0em 2em;
+  margin: 1em 0em 2em;
   font-size: 14px;
 }
 .main .d-flex h4 a {
@@ -538,6 +538,10 @@ header .menu-trigger {
   }
   .main .thumbnail_wrap .thumbnails .item {
     width: 486px;
+  }
+  .main .d-flex.alt {
+    margin-bottom: 4em;
+    padding-bottom: 4em;
   }
 }
 
