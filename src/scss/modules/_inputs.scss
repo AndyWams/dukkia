@@ -1,0 +1,135 @@
+.input {
+  position: relative;
+  margin-bottom: 1em;
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  select,
+  input[type="number"],
+  input[type="url"],
+  input[type="tel"] {
+    display: block;
+    padding: 1em 20px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 65px;
+    font-size: 15px;
+    background: rgba($cyan, 0.05);
+    border: 1px solid rgba($cyan, 0.15);
+
+    &::placeholder,
+    &::-webkit-input-placeholder {
+      color: rgba($dark, 0.5);
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: none;
+      background: $white;
+    }
+  }
+
+  label {
+    display: none;
+  }
+
+  &.bordered {
+    label {
+      position: absolute;
+      left: 16px;
+      top: 16px;
+      font-size: 15px;
+      color: rgba($dark, 0.5);
+      padding: 2px 5px;
+      display: inline-block;
+      opacity: 0;
+      background: $white;
+      pointer-events: none;
+      transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    input[type="url"],
+    input[type="tel"] {
+      color: $dark;
+      transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+
+      &::placeholder,
+      &::-webkit-input-placeholder {
+        color: rgba($dark, 0.5);
+      }
+
+      &:focus,
+      &:active {
+        background: $white;
+        border: 1px solid $cyan;
+      }
+
+      &:focus {
+        &::placeholder,
+        &::-webkit-input-placeholder {
+          opacity: 0;
+        }
+        & ~ label {
+          top: -12px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .select {
+    color: $dark;
+    background: url("../img/svg/dropdown-arrow.svg") 95% center no-repeat
+      rgba(51, 0, 101, 0.03) !important;
+    -webkit-appearance: none;
+  }
+  input[type="checkbox"] {
+    display: inline-block;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(#03293d, 0.5);
+    border-radius: 7px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    cursor: pointer;
+    &:focus,
+    &:active {
+      box-shadow: none;
+      outline: none;
+    }
+    &:checked {
+      background-color: #fff;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        bottom: -1px;
+        right: -1px;
+        border-radius: 7px;
+        background-color: #1b9cfc;
+        background-image: url(../img/check.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px;
+        border: 2px solid #1b9cfc;
+      }
+    }
+  }
+  &.checker {
+    label {
+      display: block;
+      color: $dark;
+    }
+  }
+}
