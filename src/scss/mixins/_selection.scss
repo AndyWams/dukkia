@@ -78,15 +78,21 @@
     align-items: flex-end;
     width: fit-content;
     img {
-      width: 50%;
+      width: 25%;
       border-radius: 5px;
     }
     &.alt {
       justify-content: flex-start;
     }
     @media screen and (max-width: 767px) {
+      img {
+        width: 25%;
+      }
       &.alt {
         justify-content: flex-end;
+        img {
+          width: 50%;
+        }
       }
     }
   }
