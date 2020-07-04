@@ -930,6 +930,7 @@ header .menu-trigger {
   margin-bottom: 0em;
   font-weight: bold;
   color: lightcoral;
+  width: 50%;
 }
 .public .wrapper .details-section-container .row .details .info_ ul {
   padding: 0em;
@@ -1057,6 +1058,7 @@ header .menu-trigger {
 .public .wrapper .search-listings .row .col-lg-4 .form-wrap {
   padding: 1em 2em 3em;
   background: rgba(42, 171, 226, 0.07);
+  border-radius: 5px;
 }
 .public .wrapper .search-listings .row .col-lg-4 .form-wrap .action {
   margin-top: 2em;

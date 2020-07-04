@@ -84,6 +84,7 @@
             margin-bottom: 0em;
             font-weight: bold;
             color: lightcoral;
+            width: 50%;
           }
           .info_ ul {
             padding: 0em;
@@ -143,6 +144,7 @@
           .form-wrap {
             padding: 1em 2em 3em;
             background: $light-blue;
+            border-radius: 5px;
             .action {
               margin-top: 2em;
             }
