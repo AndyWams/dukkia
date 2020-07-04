@@ -116,6 +116,49 @@
       }
     }
   }
+  .privacy-policy,
+  .contact {
+    min-height: 80vh;
+    .container {
+      padding: 2em 0;
+      .back a {
+        text-decoration: none;
+        color: $dark;
+        font-weight: 600;
+        margin-bottom: 2em;
+        display: block;
+        width: fit-content;
+        i {
+          margin-right: 4px;
+        }
+      }
+      h2 {
+        font-size: 72px;
+        line-height: 99.5%;
+        letter-spacing: -0.035em;
+        font-weight: 700;
+      }
+      .content {
+        h3 {
+          line-height: 36px;
+          position: relative;
+          font-size: 18px;
+          color: $dark;
+          font-weight: 700;
+          margin: 1em 0 0.5em;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+      .dots {
+        position: absolute;
+        left: 0;
+        top: 8em;
+      }
+    }
+  }
+
   @media screen and (min-width: 320px) and (max-width: 767px) {
     padding: 1em 1em;
     ::-webkit-scrollbar {
@@ -191,6 +234,12 @@
           margin: 3px 0px 18px 0px;
           width: 340px;
         }
+      }
+    }
+    .privacy-policy,
+    .contact {
+      .container h2 {
+        font-size: 44px;
       }
     }
   }
@@ -295,6 +344,10 @@
         margin-bottom: 4em;
         padding-bottom: 4em;
       }
+    }
+    .privacy-policy,
+    .contact {
+      min-height: 82vh;
     }
   }
 }

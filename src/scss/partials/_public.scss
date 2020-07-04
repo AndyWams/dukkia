@@ -267,4 +267,9 @@
       }
     }
   }
+  @media screen and (min-width: 1680px) {
+    .wrapper {
+      min-height: 82vh;
+    }
+  }
 }
