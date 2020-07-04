@@ -920,9 +920,11 @@ header .menu-trigger {
   .public .wrapper .search-section-container .centralize .list-item.property .base .facilities {
     display: grid !important;
     grid-template-columns: auto auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    width: -webkit-fill-available;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    grid-column-gap: 30px;
   }
   .public .wrapper .search-section-container .centralize .list-item.property .base .facilities label {
     width: -webkit-fill-available;
@@ -941,7 +943,7 @@ header .menu-trigger {
   width: fit-content;
 }
 .public .wrapper .search-section-container .centralize .list-item.property .base .brand-logo img {
-  width: 25%;
+  width: 50%;
   border-radius: 5px;
 }
 .public .wrapper .search-section-container .centralize .list-item.property .base .brand-logo.alt {
@@ -989,18 +991,6 @@ header .menu-trigger {
   }
   .public .wrapper .search-section-container .centralize .list-item.property .d-flex hgroup p {
     font-size: 20px;
-  }
-  .public .wrapper .search-section-container .centralize .list-item.property .base {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
-  }
-  .public .wrapper .search-section-container .centralize .list-item.property .base p {
-    margin: 0em 0em 1em;
   }
 }
 .public .wrapper .details-section-container {
@@ -1059,6 +1049,15 @@ header .menu-trigger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    top: 9em;
+  }
+  .public .wrapper .details-section-container .row .gallery .list-item {
+    height: 320px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .public .wrapper .details-section-container .row .gallery .list-item {
+    background-size: cover !important;
   }
 }
 .public .wrapper .details-section-container .row .details {
@@ -1086,7 +1085,7 @@ header .menu-trigger {
   margin-bottom: 0em;
   font-weight: bold;
   color: lightcoral;
-  width: 50%;
+  width: -webkit-fill-available;
 }
 .public .wrapper .details-section-container .row .details .info_ ul {
   padding: 0em;
@@ -1112,7 +1111,7 @@ header .menu-trigger {
   width: fit-content;
 }
 .public .wrapper .details-section-container .row .details .brand-logo img {
-  width: 25%;
+  width: 50%;
   border-radius: 5px;
 }
 .public .wrapper .details-section-container .row .details .brand-logo.alt {
@@ -1157,9 +1156,11 @@ header .menu-trigger {
   .public .wrapper .details-section-container .row .features .facilities {
     display: grid !important;
     grid-template-columns: auto auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    width: -webkit-fill-available;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    grid-column-gap: 30px;
   }
   .public .wrapper .details-section-container .row .features .facilities label {
     width: -webkit-fill-available;
@@ -1398,9 +1399,11 @@ header .menu-trigger {
   .public .wrapper .search-listings .row .col-lg-8 .list-item.property .base .facilities {
     display: grid !important;
     grid-template-columns: auto auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    width: -webkit-fill-available;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    grid-column-gap: 30px;
   }
   .public .wrapper .search-listings .row .col-lg-8 .list-item.property .base .facilities label {
     width: -webkit-fill-available;
@@ -1419,7 +1422,7 @@ header .menu-trigger {
   width: fit-content;
 }
 .public .wrapper .search-listings .row .col-lg-8 .list-item.property .base .brand-logo img {
-  width: 25%;
+  width: 50%;
   border-radius: 5px;
 }
 .public .wrapper .search-listings .row .col-lg-8 .list-item.property .base .brand-logo.alt {
@@ -1467,18 +1470,6 @@ header .menu-trigger {
   }
   .public .wrapper .search-listings .row .col-lg-8 .list-item.property .d-flex hgroup p {
     font-size: 20px;
-  }
-  .public .wrapper .search-listings .row .col-lg-8 .list-item.property .base {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
-  }
-  .public .wrapper .search-listings .row .col-lg-8 .list-item.property .base p {
-    margin: 0em 0em 1em;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {

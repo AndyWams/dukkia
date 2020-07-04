@@ -62,7 +62,9 @@
     @media screen and (max-width: 767px) {
       display: grid !important;
       grid-template-columns: auto auto;
-      justify-content: space-between;
+      width: -webkit-fill-available;
+      justify-content: flex-start;
+      grid-column-gap: 30px;
       label {
         width: -webkit-fill-available;
         margin: 1em 0em 1em 0em;
@@ -76,7 +78,7 @@
     align-items: flex-end;
     width: fit-content;
     img {
-      width: 25%;
+      width: 50%;
       border-radius: 5px;
     }
     &.alt {
@@ -221,13 +223,6 @@
             font-size: 20px;
           }
         }
-        .base {
-          flex-direction: column-reverse;
-          align-items: flex-start !important;
-          p {
-            margin: 0em 0em 1em;
-          }
-        }
       }
     }
   }
@@ -273,6 +268,15 @@
     @media screen and (max-width: 767px) {
       .control {
         display: flex;
+        top: 9em;
+      }
+      .list-item {
+        height: 320px;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      .list-item {
+        background-size: cover !important;
       }
     }
   }
