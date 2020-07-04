@@ -63,6 +63,10 @@
       display: grid !important;
       grid-template-columns: auto auto;
       justify-content: space-between;
+      label {
+        width: -webkit-fill-available;
+        margin: 1em 0em 1em 0em;
+      }
     }
   }
 }
