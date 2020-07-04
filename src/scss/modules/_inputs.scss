@@ -35,10 +35,13 @@
   label {
     display: none;
   }
-  &.list-item {
+  &.select_list {
     display: flex;
-    position: relative;
-    width: 340px;
+    flex-direction: column;
+    label {
+      display: block;
+      font-weight: bold;
+    }
   }
   &.bordered {
     label {

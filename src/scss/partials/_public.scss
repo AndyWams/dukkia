@@ -1,6 +1,6 @@
 .public {
   .wrapper {
-    margin: 4em 0;
+    margin: 2em 0;
     height: 100%;
     .mb_nav_ {
       width: 851px;
@@ -17,7 +17,7 @@
         color: rgba($dark, 0.5);
       }
     }
-    .property-search {
+    .search-section-container {
       background: #fff;
       box-shadow: -1px 0 20px rgba(47, 19, 67, 0.06);
       border-radius: 5px;
@@ -28,10 +28,10 @@
       .centralize {
         width: 700px;
         margin: 0 auto;
-        padding: 2em 0 4em;
+        padding: 2em 0em 0em;
         .title {
           text-align: center;
-          padding: 4em 0 2em;
+          padding: 2em 0em;
           h2 {
             font-size: 20px;
             font-weight: 600;
@@ -49,88 +49,114 @@
             margin: 12px auto 0;
           }
         }
-        .form-wrap {
-          .collapse {
-            box-shadow: rgba(47, 19, 67, 0.06) -1px 0px 20px;
-            border-radius: 5px;
-            padding: 2em;
+        @include form-wrap;
+        @include list-item;
+      }
+    }
+    .details-section-container {
+      padding: 1em 5em;
+      .mb_nav_ {
+        width: auto;
+      }
+      .row {
+        @include gallery;
+        .details {
+          margin-top: 1em;
+          h3 {
+            font-size: 25px;
+            font-weight: bold;
           }
-          .d-flex {
-            .mb-3 {
-              &:first-child {
-                margin-right: 1em;
+          p {
+            font-size: 19px;
+            margin-bottom: 0em;
+            color: $green;
+            font-weight: bold;
+            line-height: 160%;
+            span {
+              display: block;
+              font-size: 12px;
+              color: rgba($dark, 0.5);
+              font-weight: normal;
+            }
+          }
+          label {
+            font-size: 13px;
+            margin-bottom: 0em;
+            font-weight: bold;
+            color: lightcoral;
+          }
+          .info_ ul {
+            padding: 0em;
+            list-style: none;
+            li {
+              color: rgba($dark, 0.5);
+              margin: 0em 0em 1em;
+              font-size: 13px;
+              span {
+                color: $dark;
               }
             }
           }
-          .alternate {
-            margin: 1em 0 2em;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            span {
-              background: $white;
-              position: relative;
-              z-index: 2;
-              color: rgba($dark, 0.5);
-              padding: 0 1em;
-              font-size: 14px;
-            }
-            &:after {
-              content: "";
-              position: absolute;
-              width: -webkit-fill-available;
-              height: 0.5px;
-              background: #e7e7e7;
-              left: 9px;
-              top: 11px;
+          @include brand-logo;
+        }
+        .features {
+          margin: 3em 0em;
+          @include facilities;
+          .grid-container {
+            display: grid;
+            grid-column-gap: 10px;
+            grid-template-columns: auto auto auto;
+            list-style: none;
+            padding: 0;
+            li {
+              margin-bottom: 1em;
+              p {
+                margin-bottom: 0em;
+                color: $dark;
+                font-weight: bold;
+                span {
+                  color: $green;
+                  font-weight: normal;
+                }
+              }
             }
           }
         }
-        .list-item {
-          box-shadow: -1px 0 20px rgba(47, 19, 67, 0.06);
-          border-radius: 5px;
-          padding: 2em 1em;
-          transition: 0.5s ease;
-          margin-bottom: 1em;
-          .item {
-            h3 {
-              margin: 0;
-              font-size: 26px;
+      }
+      .description {
+        margin: 2em 0em;
+        p {
+          color: rgba($dark, 0.5);
+          font-size: 14px;
+        }
+      }
+    }
+    .search-listings {
+      width: 1000px;
+      margin: 0 auto;
+      .mb_nav_ {
+        width: auto;
+      }
+      .row {
+        .col-lg-4 {
+          @include form-wrap;
+          .form-wrap {
+            padding: 1em 2em 3em;
+            background: $light-blue;
+            .action {
+              margin-top: 2em;
+            }
+            h2 {
+              font-size: 20px;
               font-weight: bold;
-            }
-            img {
-              width: 24%;
-            }
-            p {
-              font-size: 15px;
-              color: rgba($dark, 0.5);
-              margin: 1em 0em;
-              strong {
-                display: flex;
-                align-items: center;
-                font-size: 24px;
-                color: cadetblue;
-              }
-            }
-            .naration {
-              border: 1px dashed rgba(16, 16, 16, 0.1);
-              padding: 2em;
-              label {
-                margin: 0 0em 1em;
-                display: block;
-                a {
-                  color: $cyan;
-                  text-decoration: underline;
-                }
-                &:last-child {
-                  margin: 0em;
-                }
-              }
+              padding-bottom: 1em;
+              border-bottom: 1px solid rgba(3, 114, 173, 0.17);
+              margin-bottom: 1em;
             }
           }
-          &:hover {
-            box-shadow: -1px 0 20px 15px rgba(47, 19, 67, 0.06);
-          }
+        }
+        .col-lg-8 {
+          @include list-item;
         }
       }
     }
@@ -141,7 +167,7 @@
       .mb_nav_ {
         width: auto;
       }
-      .property-search {
+      .search-section-container {
         width: auto;
         .centralize {
           width: auto;
@@ -149,6 +175,9 @@
             padding: 1em;
             .collapse {
               padding: 2em 1em;
+              .d-flex {
+                align-items: flex-start !important;
+              }
             }
             .d-flex {
               flex-direction: column;
@@ -159,7 +188,37 @@
               }
             }
           }
-          .list-item {
+        }
+      }
+      .details-section-container {
+        padding: 1em 0em;
+        .row {
+          .details {
+            padding: 1em;
+          }
+          .features {
+            padding: 1em;
+            margin: 3em 0em 0em;
+            .grid-container {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+        .description {
+          padding: 1em;
+          margin: 0em;
+        }
+      }
+      .search-listings {
+        width: auto;
+        .row {
+          margin: 0 -6px;
+          .col-lg-4 {
+            margin-bottom: 1em;
+            .form-wrap {
+              padding: 1em 1em 2em;
+            }
           }
         }
       }
@@ -171,7 +230,7 @@
       .mb_nav_ {
         width: 600px;
       }
-      .property-search {
+      .search-section-container {
         width: 600px;
         .centralize {
           width: 500px;
@@ -188,6 +247,21 @@
                 }
               }
             }
+          }
+        }
+      }
+      .details-section-container {
+        padding: 1em 1em;
+        .description {
+          margin: 0em;
+        }
+      }
+      .search-listings {
+        width: auto;
+        .row {
+          margin: 0;
+          .col-lg-4 {
+            margin-bottom: 1em;
           }
         }
       }

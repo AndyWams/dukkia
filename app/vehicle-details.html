@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent List | Dukkia</title>
+    <title>Vehicle Details | Dukkia</title>
     <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="assets/components/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -79,23 +81,23 @@
                     <div class="sub-menu">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="vehicle-search.html">
                                     Used Cars for Sale
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="vehicle-search.html">
                                     New Cars for Sale
                                 </a>
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Car Dealers
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Private Sellers
                                 </a>
                             </li>
@@ -163,22 +165,22 @@
                     <div class="sub-menu">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="property-search.html">
                                     Residential Properties for Sale
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="property-search.html">
                                     Commercial Properties for Sale
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Estate Agents
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Private Sellers
                                 </a>
                             </li>
@@ -190,22 +192,22 @@
                     <div class="sub-menu">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="property-search.html">
                                     Residential Properties to Rent
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="property-search.html">
                                     Commercial Properties to Let
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Lettings Agents
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Private Landlords
                                 </a>
                             </li>
@@ -217,22 +219,22 @@
                     <div class="sub-menu">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="vehicle-search.html">
                                     Used Cars for Sale
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="vehicle-search.html">
                                     New Cars for Sale
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Car Dealers
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Private Sellers
                                 </a>
                             </li>
@@ -280,59 +282,81 @@
     </div>
     <main class="public">
         <div class="wrapper">
-            <div class="mb_nav_">
-                <a href="/">Home</a>
-                <span>/ </span>
-                <a href="agent-search.html">Estate-Agents</a>
-                <span>/List</span>
-            </div>
-            <section class="property-search">
-                <div class="centralize">
-                    <div class="list-item">
-                        <div class="item">
-                            <div class="d-flex justify-content-between align-items-start">
-                                <h3>SamWam Estate Agent</h3>
-                                <img src="assets/img/canopus.jpg">
+            <section class="details-section-container">
+                <div class="mb_nav_">
+                    <a href="/">Home</a>
+                    <span>/ </span>
+                    <a href="vehicle-list.html">Used Cars-for-sale</a>
+                    <span>/</span>
+                    <a href="vehicle-list.html">List</a>
+                    <span>/ Details</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="gallery">
+                            <div class="control back">
+                                <ion-icon name="chevron-back">
+                                </ion-icon>
                             </div>
-                            <p>Mende-Maryland, Lagos<strong>
-                                    <ion-icon name="phone-portrait-outline"></ion-icon> 07894234963
-                                </strong></p>
-                            <div class="naration">
-                                <label>Residential Property for sale <a href="">1</a></label>
-                                <label>Residential Property for sale <a href="">1</a></label>
+                            <div class="active list-item animate__animated  animate__fadeInRight"
+                                style="background: url('assets/img/car-brand-1.jpg');">
                             </div>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <div class="item">
-                            <div class="d-flex justify-content-between align-items-start">
-                                <h3>SamWam Estate & Letting Agents</h3>
-                                <img src="assets/img/canopus-2.jpg">
+                            <div class="list-item animate__animated  animate__fadeInRight"
+                                style="background: url('assets/img/empty-image.jpg');">
                             </div>
-                            <p>Lafiaji, Kwara <strong>
-                                    <ion-icon name="phone-portrait-outline"></ion-icon> 07943535354
-                                </strong></p>
-                            <div class="naration">
-                                <label>Residential Property for sale <a href="">0</a></label>
-                                <label>Residential Property for sale <a href="">1</a></label>
+                            <div class="control forward">
+                                <ion-icon name="chevron-forward">
+                                </ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="list-item">
-                        <div class="item">
-                            <div class="d-flex justify-content-between align-items-start">
-                                <h3>Blossom study</h3>
-                                <img src="assets/img/blosom.jpg">
+                    <div class="col-lg-7">
+                        <div class="details">
+                            <h3>2015 Mercedes-Benz Car for sale</h3>
+                            <p><span>Alausa, Lagos</span>₦4,520,000</p>
+                            <div class="d-flex justify-content-between align-items-end">
+                                <label>SamWam Car Dealers</label>
+                                <div class="brand-logo alt"><img src="assets/img/brand-logo-1.jpg" alt=""></div>
                             </div>
-                            <p>Oron, Akwa Ibom <strong>
-                                    <ion-icon name="phone-portrait-outline"></ion-icon>07031600881
-                                </strong></p>
-                            <div class="naration">
-                                <label>Residential Property for sale <a href="">0</a></label>
-                                <label>Residential Property for sale <a href="">1</a></label>
-                            </div>
+                            <hr>
+                        </div>
+                        <div class="features">
+                            <h4>Features</h4>
+                            <ul class="grid-container">
+                                <li>
+                                    <p>Make: <span>Mercedes Benz</span></p>
+                                </li>
+                                <li>
+                                    <p>Model: <span>C-Class</span></p>
+                                </li>
+                                <li>
+                                    <p>Body: <span>Saloon</span></p>
+                                </li>
+                                <li>
+                                    <p>Type: <span>C 200 D</span></p>
+                                </li>
+                                <li>
+                                    <p>Year: <span>2015</span></p>
+                                </li>
+                                <li>
+                                    <p>Fuel: <span>Diesel</span></p>
+                                </li>
+                                <li>
+                                    <p>Transmission: <span>Automatic</span></p>
+                                </li>
+                                <li>
+                                    <p>Engine: <span>1997ccm 88HP 65KW</span></p>
+                                </li>
+                                <li>
+                                    <p>Color: <span>Blue</span></p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                </div>
+                <div class="description">
+                    <h4>Description</h4>
+                    <p>In good condition.</p>
                 </div>
             </section>
         </div>
@@ -345,6 +369,36 @@
     <script src="assets/components/bootstrap/bootstrap.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides((slideIndex += n));
+            }
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("list-item");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+            $(".gallery .back ").click(function () {
+                plusSlides(-1);
+            });
+            $(".gallery .forward ").click(function () {
+                plusSlides(1);
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent List | Dukkia</title>
+    <title>Property List | Dukkia</title>
     <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="assets/components/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -79,23 +81,23 @@
                     <div class="sub-menu">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="vehicle-search.html">
                                     Used Cars for Sale
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="vehicle-search.html">
                                     New Cars for Sale
                                 </a>
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Car Dealers
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Private Sellers
                                 </a>
                             </li>
@@ -163,22 +165,22 @@
                     <div class="sub-menu">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="property-search.html">
                                     Residential Properties for Sale
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="property-search.html">
                                     Commercial Properties for Sale
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Estate Agents
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Private Sellers
                                 </a>
                             </li>
@@ -190,22 +192,22 @@
                     <div class="sub-menu">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="property-search.html">
                                     Residential Properties to Rent
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="property-search.html">
                                     Commercial Properties to Let
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Lettings Agents
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Private Landlords
                                 </a>
                             </li>
@@ -217,22 +219,22 @@
                     <div class="sub-menu">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="vehicle-search.html">
                                     Used Cars for Sale
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="vehicle-search.html">
                                     New Cars for Sale
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Car Dealers
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="agent-search.html">
                                     Find Private Sellers
                                 </a>
                             </li>
@@ -283,54 +285,89 @@
             <div class="mb_nav_">
                 <a href="/">Home</a>
                 <span>/ </span>
-                <a href="agent-search.html">Estate-Agents</a>
+                <a href="property-list.html">Residential Property-to-Rent</a>
                 <span>/List</span>
             </div>
-            <section class="property-search">
+            <section class="search-section-container">
                 <div class="centralize">
-                    <div class="list-item">
-                        <div class="item">
-                            <div class="d-flex justify-content-between align-items-start">
-                                <h3>SamWam Estate Agent</h3>
-                                <img src="assets/img/canopus.jpg">
+                    <div class="list-item property">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <aside><a href="property-details.html">2 Bed Flat at Festac</a><span>Festac Town,
+                                        Lagos</span></aside>
+                                <label>
+                                    <ion-icon name="bookmark"></ion-icon> Samson Wamunuko
+                                </label>
                             </div>
-                            <p>Mende-Maryland, Lagos<strong>
-                                    <ion-icon name="phone-portrait-outline"></ion-icon> 07894234963
-                                </strong></p>
-                            <div class="naration">
-                                <label>Residential Property for sale <a href="">1</a></label>
-                                <label>Residential Property for sale <a href="">1</a></label>
+                            <hgroup>
+                                <label>
+                                    <ion-icon name="camera-outline"></ion-icon> 8
+                                </label>
+                                <p>₦650,000</p>
+                            </hgroup>
+                        </div>
+                        <div class="base d-flex justify-content-between align-items-end">
+                            <div class="facilities d-flex align-items-center">
+                                <label>
+                                    <i class="fa fa-bed"></i>
+                                    <span>2 Bed</span>
+                                </label>
+                                <label>
+                                    <i class="fas fa-bath"></i>
+                                    <span>1 Bathroom</span>
+                                </label>
+                                <label>
+                                    <i class="fa fa-car"></i>
+                                    <span>2 Parking lot</span>
+                                </label>
+                                <label>
+                                    <i class="fas fa-image"></i>
+                                    <span>2 Photos</span>
+                                </label>
                             </div>
+                            <p>
+                                <ion-icon name="heart-outline"></ion-icon> Save
+                            </p>
                         </div>
                     </div>
-                    <div class="list-item">
-                        <div class="item">
-                            <div class="d-flex justify-content-between align-items-start">
-                                <h3>SamWam Estate & Letting Agents</h3>
-                                <img src="assets/img/canopus-2.jpg">
+                    <div class="list-item property">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <aside><a href="property-details.html">3 Bedroom Duppex at Arepo</a><span>Arepo,
+                                        Lagos</span></aside>
+                                <label>
+                                    <ion-icon name="bookmark"></ion-icon> Samson Wamunuko
+                                </label>
                             </div>
-                            <p>Lafiaji, Kwara <strong>
-                                    <ion-icon name="phone-portrait-outline"></ion-icon> 07943535354
-                                </strong></p>
-                            <div class="naration">
-                                <label>Residential Property for sale <a href="">0</a></label>
-                                <label>Residential Property for sale <a href="">1</a></label>
-                            </div>
+                            <hgroup>
+                                <label>
+                                    <ion-icon name="camera-outline"></ion-icon> 6
+                                </label>
+                                <p>₦900,000</p>
+                            </hgroup>
                         </div>
-                    </div>
-                    <div class="list-item">
-                        <div class="item">
-                            <div class="d-flex justify-content-between align-items-start">
-                                <h3>Blossom study</h3>
-                                <img src="assets/img/blosom.jpg">
+                        <div class="base d-flex justify-content-between align-items-end">
+                            <div class="facilities d-flex align-items-center">
+                                <label>
+                                    <i class="fa fa-bed"></i>
+                                    <span>3 Bed</span>
+                                </label>
+                                <label>
+                                    <i class="fas fa-bath"></i>
+                                    <span>3 Bathroom</span>
+                                </label>
+                                <label>
+                                    <i class="fa fa-car"></i>
+                                    <span>4 Parking lot</span>
+                                </label>
+                                <label>
+                                    <i class="fas fa-image"></i>
+                                    <span>2 Photos</span>
+                                </label>
                             </div>
-                            <p>Oron, Akwa Ibom <strong>
-                                    <ion-icon name="phone-portrait-outline"></ion-icon>07031600881
-                                </strong></p>
-                            <div class="naration">
-                                <label>Residential Property for sale <a href="">0</a></label>
-                                <label>Residential Property for sale <a href="">1</a></label>
-                            </div>
+                            <p>
+                                <ion-icon name="heart-outline"></ion-icon> Save
+                            </p>
                         </div>
                     </div>
                 </div>

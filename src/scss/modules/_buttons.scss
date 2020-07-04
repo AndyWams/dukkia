@@ -11,7 +11,6 @@
     align-items: center;
     display: inline-grid;
     height: 47px;
-    width: 138px;
     padding: 0 2em;
     font-weight: 500;
     &:active {
@@ -38,7 +37,6 @@
     align-items: center;
     display: inline-grid;
     height: 47px;
-    width: 138px;
     padding: 0 2em;
     font-weight: 500;
 
@@ -70,12 +68,13 @@
     }
   }
   &.item {
-    background: #00b8c2;
+    background: $dark;
     width: fit-content;
     padding: 0.5em 3em;
     border-radius: 5px;
     margin-top: 1em;
     display: block;
+    border: 1px dashed #ccc;
     color: white;
   }
 }

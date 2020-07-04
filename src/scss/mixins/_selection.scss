@@ -1,0 +1,275 @@
+@mixin form-wrap {
+  .form-wrap {
+    .collapse {
+      box-shadow: rgba(47, 19, 67, 0.06) -1px 0px 20px;
+      border-radius: 5px;
+      padding: 2em;
+      strong {
+        width: 25%;
+        margin-bottom: 1em;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    .d-flex {
+      .mb-3 {
+        &:first-child {
+          margin-right: 1em;
+        }
+      }
+    }
+    .alternate {
+      margin: 1em 0 2em;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      span {
+        background: $white;
+        position: relative;
+        z-index: 2;
+        color: rgba($dark, 0.5);
+        padding: 0 1em;
+        font-size: 14px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: -webkit-fill-available;
+        height: 0.5px;
+        background: #e7e7e7;
+        left: 9px;
+        top: 11px;
+      }
+    }
+  }
+}
+@mixin facilities {
+  .facilities {
+    label {
+      flex-direction: column;
+      margin: 1em 1em 0em 0em;
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      color: rgba($dark, 0.5);
+      i {
+        font-size: 19px;
+      }
+      span {
+        display: block;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      display: grid !important;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+    }
+  }
+}
+@mixin brand-logo {
+  .brand-logo {
+    display: flex;
+    align-items: flex-end;
+    width: fit-content;
+    img {
+      width: 25%;
+      border-radius: 5px;
+    }
+    &.alt {
+      justify-content: flex-start;
+    }
+    @media screen and (max-width: 767px) {
+      &.alt {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+@mixin list-item {
+  .list-item {
+    box-shadow: -1px 0 20px rgba(47, 19, 67, 0.06);
+    border-radius: 5px;
+    padding: 2em 1em;
+    transition: 0.5s ease;
+    margin-bottom: 1em;
+    .item {
+      h3 {
+        margin: 0;
+        font-size: 26px;
+        font-weight: bold;
+      }
+      img {
+        width: 12%;
+      }
+      p {
+        font-size: 15px;
+        color: rgba($dark, 0.5);
+        margin: 1em 0em;
+        strong {
+          display: flex;
+          align-items: center;
+          font-size: 24px;
+          color: cadetblue;
+        }
+      }
+      .naration {
+        border: 1px dashed rgba(16, 16, 16, 0.1);
+        padding: 2em;
+        label {
+          margin: 0 0em 1em;
+          display: block;
+          a {
+            color: $cyan;
+            text-decoration: underline;
+          }
+          &:last-child {
+            margin: 0em;
+          }
+        }
+      }
+    }
+    &.property {
+      padding: 1em 1em;
+      .d-flex {
+        aside {
+          a {
+            font-size: 28px;
+            color: $cyan;
+            text-decoration: none;
+            transition: 0.5s ease;
+            line-height: 138%;
+            &:hover {
+              color: #26858a;
+            }
+          }
+          span {
+            display: block;
+            color: rgba($dark, 0.5);
+            font-size: 15px;
+          }
+        }
+        label {
+          font-size: 12px;
+          color: $dark;
+          margin: 1em 0em;
+          display: flex;
+          align-items: center;
+          width: fit-content;
+        }
+        hgroup {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          label {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 18px;
+            ion-icon {
+              margin-right: 5px;
+            }
+          }
+          p {
+            color: $green;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 1em 0em 0em;
+          }
+        }
+      }
+      .base {
+        margin-top: 3em;
+        @include facilities;
+        @include brand-logo;
+        p {
+          font-size: 16px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          color: $green;
+          margin: 0;
+          cursor: pointer;
+          ion-icon {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+    &:hover {
+      box-shadow: -1px 0 20px 15px rgba(47, 19, 67, 0.06);
+    }
+    @media screen and (max-width: 767px) {
+      .item {
+        h3 {
+          font-size: 18px;
+        }
+        p strong {
+          font-size: 18px;
+        }
+      }
+      &.property {
+        .d-flex {
+          aside a {
+            font-size: 24px;
+          }
+          hgroup p {
+            font-size: 20px;
+          }
+        }
+        .base {
+          flex-direction: column-reverse;
+          align-items: flex-start !important;
+          p {
+            margin: 0em 0em 1em;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin gallery {
+  .gallery {
+    position: relative;
+    overflow: hidden;
+    .list-item {
+      height: 400px;
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+      display: none;
+    }
+    .control {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 11em;
+      border: 1px solid $cyan;
+      background: $cyan;
+      border-radius: 4px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      display: none;
+      cursor: pointer;
+      transition: 0.5 ease-in;
+      &.back {
+        left: 1.5em;
+      }
+      &.forward {
+        right: 1.5em;
+      }
+    }
+    &:hover {
+      .control {
+        display: flex;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .control {
+        display: flex;
+      }
+    }
+  }
+}
